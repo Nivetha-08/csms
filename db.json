@@ -1,0 +1,576 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "clerkUserId": "user_aaa",
+      "name": "Admin User",
+      "email": "admin@gmail.com",
+      "role": "admin",
+      "isActive": true,
+      "createdAt": "2026-01-01",
+      "permissions": [
+        "users:create",
+        "users:read",
+        "users:update",
+        "users:delete",
+        "student:create",
+        "student:read",
+        "student:update",
+        "student:delete",
+        "documentGeneration:create",
+        "documentGeneration:read",
+        "documentGeneration:update",
+        "documentGeneration:delete",
+        "marks:create",
+        "marks:read",
+        "marks:update",
+        "marks:delete",
+        "fees:create",
+        "fees:read",
+        "fees:update",
+        "fees:delete"
+      ]
+    },
+    {
+      "id": 2,
+      "clerkUserId": "user_bbb",
+      "name": "Rahul",
+      "email": "teacher1@gmail.com",
+      "role": "teacher",
+      "isActive": true,
+      "createdAt": "2026-01-01",
+      "permissions": [
+        "students:read",
+        "documentGeneration:create",
+        "documentGeneration:read",
+        "documentGeneration:update",
+        "marks:create",
+        "marks:read",
+        "marks:update",
+        "fees:read",
+        "fees:update"
+      ]
+    },
+    {
+      "id": 3,
+      "clerkUserId": "user_ccc",
+      "name": "Anita",
+      "email": "teacher2@gmail.com",
+      "role": "teacher",
+      "isActive": true,
+      "createdAt": "2026-01-02",
+      "permissions": [
+        "students:read",
+        "documentGeneration:create",
+        "documentGeneration:read",
+        "documentGeneration:update",
+        "marks:create",
+        "marks:read",
+        "marks:update",
+        "fees:read",
+        "fees:update"
+      ]
+    },
+    {
+      "id": 4,
+      "clerkUserId": "user_ddd",
+      "name": "Vikram",
+      "email": "teacher3@gmail.com",
+      "role": "teacher",
+      "isActive": true,
+      "createdAt": "2026-01-02",
+      "permissions": [
+        "students:read",
+        "documentGeneration:create",
+        "documentGeneration:read",
+        "documentGeneration:update",
+        "marks:create",
+        "marks:read",
+        "marks:update",
+        "fees:read",
+        "fees:update"
+      ]
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "Arun Kumar",
+      "rollnumer": "CSE101",
+      "departmen": "Computer Science",
+      "year": 1,
+      "email": "arun.kumar@example.com",
+      "phone": "9876543210",
+      "adress": "Chennai, Tamil Nadu",
+      "createdAt": "2026-03-01T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Priya Sharma",
+      "rollnumer": "ECE102",
+      "departmen": "Electronics",
+      "year": 2,
+      "email": "priya.sharma@example.com",
+      "phone": "9876543211",
+      "adress": "Bangalore, Karnataka",
+      "createdAt": "2026-03-01T10:10:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Rahul Verma",
+      "rollnumer": "ME103",
+      "departmen": "Mechanical",
+      "year": 3,
+      "email": "rahul.verma@example.com",
+      "phone": "9876543212",
+      "adress": "Hyderabad, Telangana",
+      "createdAt": "2026-03-01T10:20:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Sneha Reddy",
+      "rollnumer": "CIV104",
+      "departmen": "Civil",
+      "year": 4,
+      "email": "sneha.reddy@example.com",
+      "phone": "9876543213",
+      "adress": "Mumbai, Maharashtra",
+      "createdAt": "2026-03-01T10:30:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Vikram Singh",
+      "rollnumer": "IT105",
+      "departmen": "Information Technology",
+      "year": 1,
+      "email": "vikram.singh@example.com",
+      "phone": "9876543214",
+      "adress": "Delhi, India",
+      "createdAt": "2026-03-01T10:40:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Anjali Patel",
+      "rollnumer": "EEE106",
+      "departmen": "Electrical",
+      "year": 2,
+      "email": "anjali.patel@example.com",
+      "phone": "9876543215",
+      "adress": "Ahmedabad, Gujarat",
+      "createdAt": "2026-03-01T10:50:00Z"
+    },
+    {
+      "id": 7,
+      "name": "Karthik Raj",
+      "rollnumer": "CSE107",
+      "departmen": "Computer Science",
+      "year": 3,
+      "email": "karthik.raj@example.com",
+      "phone": "9876543216",
+      "adress": "Coimbatore, Tamil Nadu",
+      "createdAt": "2026-03-01T11:00:00Z"
+    },
+    {
+      "id": 8,
+      "name": "Meera Iyer",
+      "rollnumer": "BIO108",
+      "departmen": "Biotechnology",
+      "year": 4,
+      "email": "meera.iyer@example.com",
+      "phone": "9876543217",
+      "adress": "Pune, Maharashtra",
+      "createdAt": "2026-03-01T11:10:00Z"
+    },
+    {
+      "id": 9,
+      "name": "Sanjay Das",
+      "rollnumer": "CHE109",
+      "departmen": "Chemical",
+      "year": 2,
+      "email": "sanjay.das@example.com",
+      "phone": "9876543218",
+      "adress": "Kolkata, West Bengal",
+      "createdAt": "2026-03-01T11:20:00Z"
+    },
+    {
+      "id": 10,
+      "name": "Divya Nair",
+      "rollnumer": "CSE110",
+      "departmen": "Computer Science",
+      "year": 1,
+      "email": "divya.nair@example.com",
+      "phone": "9876543219",
+      "adress": "Kochi, Kerala",
+      "createdAt": "2026-03-01T11:30:00Z"
+    }
+  ],
+  "marks": [
+    {
+      "id": 1,
+      "studentid": 1,
+      "subject": "Mathematics",
+      "marksobtained": 85,
+      "maxmarks": 100,
+      "semester": 1,
+      "createdat": "2026-03-01T12:00:00Z"
+    },
+    {
+      "id": 2,
+      "studentid": 2,
+      "subject": "Physics",
+      "marksobtained": 78,
+      "maxmarks": 100,
+      "semester": 1,
+      "createdat": "2026-03-01T12:10:00Z"
+    },
+    {
+      "id": 3,
+      "studentid": 3,
+      "subject": "Chemistry",
+      "marksobtained": 88,
+      "maxmarks": 100,
+      "semester": 2,
+      "createdat": "2026-03-01T12:20:00Z"
+    },
+    {
+      "id": 4,
+      "studentid": 4,
+      "subject": "Engineering Mechanics",
+      "marksobtained": 72,
+      "maxmarks": 100,
+      "semester": 2,
+      "createdat": "2026-03-01T12:30:00Z"
+    },
+    {
+      "id": 5,
+      "studentid": 5,
+      "subject": "Programming in C",
+      "marksobtained": 91,
+      "maxmarks": 100,
+      "semester": 1,
+      "createdat": "2026-03-01T12:40:00Z"
+    },
+    {
+      "id": 6,
+      "studentid": 6,
+      "subject": "Electrical Circuits",
+      "marksobtained": 67,
+      "maxmarks": 100,
+      "semester": 3,
+      "createdat": "2026-03-01T12:50:00Z"
+    },
+    {
+      "id": 7,
+      "studentid": 7,
+      "subject": "Data Structures",
+      "marksobtained": 94,
+      "maxmarks": 100,
+      "semester": 3,
+      "createdat": "2026-03-01T13:00:00Z"
+    },
+    {
+      "id": 8,
+      "studentid": 8,
+      "subject": "Biology",
+      "marksobtained": 81,
+      "maxmarks": 100,
+      "semester": 4,
+      "createdat": "2026-03-01T13:10:00Z"
+    },
+    {
+      "id": 9,
+      "studentid": 9,
+      "subject": "Organic Chemistry",
+      "marksobtained": 76,
+      "maxmarks": 100,
+      "semester": 2,
+      "createdat": "2026-03-01T13:20:00Z"
+    },
+    {
+      "id": 10,
+      "studentid": 10,
+      "subject": "Operating Systems",
+      "marksobtained": 89,
+      "maxmarks": 100,
+      "semester": 1,
+      "createdat": "2026-03-01T13:30:00Z"
+    }
+  ],
+  "fees": [
+    {
+      "id": 1,
+      "studentid": 1,
+      "totalamount": 50000,
+      "paidamount": 50000,
+      "dueamount": 0,
+      "paymentstatus": "paid",
+      "paymentdate": [
+        {
+          "amount": 50000,
+          "date": "2026-02-01"
+        }
+      ],
+      "createdat": "2026-03-01T14:00:00Z"
+    },
+    {
+      "id": 2,
+      "studentid": 2,
+      "totalamount": 60000,
+      "paidamount": 30000,
+      "dueamount": 30000,
+      "paymentstatus": "partial",
+      "paymentdate": [
+        {
+          "amount": 20000,
+          "date": "2026-01-15"
+        },
+        {
+          "amount": 10000,
+          "date": "2026-02-15"
+        }
+      ],
+      "createdat": "2026-03-01T14:10:00Z"
+    },
+    {
+      "id": 3,
+      "studentid": 3,
+      "totalamount": 55000,
+      "paidamount": 55000,
+      "dueamount": 0,
+      "paymentstatus": "paid",
+      "paymentdate": [
+        {
+          "amount": 55000,
+          "date": "2026-02-10"
+        }
+      ],
+      "createdat": "2026-03-01T14:20:00Z"
+    },
+    {
+      "id": 4,
+      "studentid": 4,
+      "totalamount": 45000,
+      "paidamount": 20000,
+      "dueamount": 25000,
+      "paymentstatus": "partial",
+      "paymentdate": [
+        {
+          "amount": 20000,
+          "date": "2026-02-05"
+        }
+      ],
+      "createdat": "2026-03-01T14:30:00Z"
+    },
+    {
+      "id": 5,
+      "studentid": 5,
+      "totalamount": 70000,
+      "paidamount": 70000,
+      "dueamount": 0,
+      "paymentstatus": "paid",
+      "paymentdate": [
+        {
+          "amount": 70000,
+          "date": "2026-02-20"
+        }
+      ],
+      "createdat": "2026-03-01T14:40:00Z"
+    },
+    {
+      "id": 6,
+      "studentid": 6,
+      "totalamount": 52000,
+      "paidamount": 25000,
+      "dueamount": 27000,
+      "paymentstatus": "partial",
+      "paymentdate": [
+        {
+          "amount": 15000,
+          "date": "2026-01-20"
+        },
+        {
+          "amount": 10000,
+          "date": "2026-02-25"
+        }
+      ],
+      "createdat": "2026-03-01T14:50:00Z"
+    },
+    {
+      "id": 7,
+      "studentid": 7,
+      "totalamount": 48000,
+      "paidamount": 0,
+      "dueamount": 48000,
+      "paymentstatus": "due",
+      "paymentdate": [],
+      "createdat": "2026-03-01T15:00:00Z"
+    },
+    {
+      "id": 8,
+      "studentid": 8,
+      "totalamount": 53000,
+      "paidamount": 53000,
+      "dueamount": 0,
+      "paymentstatus": "paid",
+      "paymentdate": [
+        {
+          "amount": 53000,
+          "date": "2026-02-18"
+        }
+      ],
+      "createdat": "2026-03-01T15:10:00Z"
+    },
+    {
+      "id": 9,
+      "studentid": 9,
+      "totalamount": 60000,
+      "paidamount": 30000,
+      "dueamount": 30000,
+      "paymentstatus": "partial",
+      "paymentdate": [
+        {
+          "amount": 30000,
+          "date": "2026-02-28"
+        }
+      ],
+      "createdat": "2026-03-01T15:20:00Z"
+    },
+    {
+      "id": 10,
+      "studentid": 10,
+      "totalamount": 65000,
+      "paidamount": 0,
+      "dueamount": 65000,
+      "paymentstatus": "due",
+      "paymentdate": [],
+      "createdat": "2026-03-01T15:30:00Z"
+    },
+    {
+      "studentid": "11",
+      "totalamount": "300000",
+      "paidamount": "250000",
+      "dueamount": 50000,
+      "paymentstatus": "partial",
+      "paymentdate": [
+        {
+          "amount": "250000",
+          "date": "2026-03-02"
+        }
+      ],
+      "createdat": "2026-03-02T11:24:32.943Z",
+      "id": 11
+    }
+  ],
+  "documentGeneration": [
+    {
+      "id": 1,
+      "studentid": 1,
+      "documentType": {
+        "type": "BONAFIED"
+      },
+      "issuedate": "2026-02-05",
+      "content": "This is to certify that Arun Kumar is a bonafide student of our institution.",
+      "createdby": "admin",
+      "createdat": "2026-03-01T16:00:00Z"
+    },
+    {
+      "id": 2,
+      "studentid": 2,
+      "documentType": {
+        "type": "MARKSHEET"
+      },
+      "issuedate": "2026-02-10",
+      "content": "Official marksheet issued for Semester 1 examinations.",
+      "createdby": "teacher",
+      "createdat": "2026-03-01T16:10:00Z"
+    },
+    {
+      "id": 3,
+      "studentid": 3,
+      "documentType": {
+        "type": "TRANSFER_CERTIFICATE"
+      },
+      "issuedate": "2026-02-12",
+      "content": "Transfer Certificate issued upon student request.",
+      "createdby": "admin",
+      "createdat": "2026-03-01T16:20:00Z"
+    },
+    {
+      "id": 4,
+      "studentid": 4,
+      "documentType": {
+        "type": "BONAFIED"
+      },
+      "issuedate": "2026-02-15",
+      "content": "Bonafide certificate issued for scholarship purpose.",
+      "createdby": "teacher",
+      "createdat": "2026-03-01T16:30:00Z"
+    },
+    {
+      "id": 5,
+      "studentid": 5,
+      "documentType": {
+        "type": "MARKSHEET"
+      },
+      "issuedate": "2026-02-18",
+      "content": "Semester 1 marksheet issued.",
+      "createdby": "admin",
+      "createdat": "2026-03-01T16:40:00Z"
+    },
+    {
+      "id": 6,
+      "studentid": 6,
+      "documentType": {
+        "type": "BONAFIED"
+      },
+      "issuedate": "2026-02-20",
+      "content": "Bonafide certificate issued for bank loan purpose.",
+      "createdby": "admin",
+      "createdat": "2026-03-01T16:50:00Z"
+    },
+    {
+      "id": 7,
+      "studentid": 7,
+      "documentType": {
+        "type": "TRANSFER_CERTIFICATE"
+      },
+      "issuedate": "2026-02-22",
+      "content": "Transfer Certificate issued after course completion.",
+      "createdby": "teacher",
+      "createdat": "2026-03-01T17:00:00Z"
+    },
+    {
+      "id": 8,
+      "studentid": 8,
+      "documentType": {
+        "type": "MARKSHEET"
+      },
+      "issuedate": "2026-02-25",
+      "content": "Semester 4 marksheet issued.",
+      "createdby": "admin",
+      "createdat": "2026-03-01T17:10:00Z"
+    },
+    {
+      "id": 9,
+      "studentid": 9,
+      "documentType": {
+        "type": "BONAFIED"
+      },
+      "issuedate": "2026-02-27",
+      "content": "Bonafide certificate issued for passport verification.",
+      "createdby": "teacher",
+      "createdat": "2026-03-01T17:20:00Z"
+    },
+    {
+      "id": 10,
+      "studentid": 10,
+      "documentType": {
+        "type": "MARKSHEET"
+      },
+      "issuedate": "2026-02-28",
+      "content": "Official marksheet issued for Semester 1.",
+      "createdby": "admin",
+      "createdat": "2026-03-01T17:30:00Z"
+    }
+  ]
+}
